@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class GhettoNumeralSystem {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String number = input.nextLine();
+        String temp;
+        for (int i = 0; i < number.length(); i++) {
+            switch (number.charAt(i)) {
+                case '0':
+                    temp = "Gee";
+                    break;
+                case '1':
+                    temp = "Bro";
+                    break;
+                case '2':
+                    temp = "Zus";
+                    break;
+                case '3':
+                    temp = "Ma";
+                    break;
+                case '4':
+                    temp = "Duh";
+                    break;
+                case '5':
+                    temp = "Yo";
+                    break;
+                case '6':
+                    temp = "Dis";
+                    break;
+                case '7':
+                    temp = "Hood";
+                    break;
+                case '8':
+                    temp = "Jam";
+                    break;
+                case '9':
+                    temp = "Mack";
+                    break;
+                default:
+                    temp = "";
+                    break;
+            }
+            System.out.print(temp);
+        }
+    }
+}
